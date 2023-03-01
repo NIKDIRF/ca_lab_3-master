@@ -1,0 +1,129 @@
+[
+    {
+        "opcode": "mov",
+        "addr": 0,
+        "args": [
+            6,
+            2
+        ]
+    },
+    {
+        "opcode": "add",
+        "addr": 1,
+        "args": [
+            0,
+            2
+        ]
+    },
+    {
+        "opcode": "add",
+        "addr": 2,
+        "args": [
+            1,
+            2
+        ]
+    },
+    {
+        "opcode": "mov",
+        "addr": 3,
+        "args": [
+            1,
+            0
+        ]
+    },
+    {
+        "opcode": "mov",
+        "addr": 4,
+        "args": [
+            2,
+            1
+        ]
+    },
+    {
+        "opcode": "cmp",
+        "addr": 5,
+        "args": [
+            1,
+            7
+        ]
+    },
+    {
+        "opcode": "je",
+        "addr": 6,
+        "args": [
+            14
+        ]
+    },
+    {
+        "opcode": "rdiv",
+        "addr": 7,
+        "args": [
+            1,
+            8
+        ]
+    },
+    {
+        "opcode": "sv",
+        "addr": 8,
+        "args": [
+            3
+        ]
+    },
+    {
+        "opcode": "cmp",
+        "addr": 9,
+        "args": [
+            3,
+            9
+        ]
+    },
+    {
+        "opcode": "je",
+        "addr": 10,
+        "args": [
+            12
+        ]
+    },
+    {
+        "opcode": "jmp",
+        "addr": 11,
+        "args": [
+            0
+        ]
+    },
+    {
+        "opcode": "add",
+        "addr": 12,
+        "args": [
+            1,
+            5
+        ]
+    },
+    {
+        "opcode": "jmp",
+        "addr": 13,
+        "args": [
+            0
+        ]
+    },
+    {
+        "opcode": "add",
+        "addr": 14,
+        "args": [
+            1,
+            5
+        ]
+    },
+    {
+        "opcode": "out",
+        "addr": 15,
+        "args": [
+            5
+        ]
+    },
+    {
+        "opcode": "hlt",
+        "addr": 16,
+        "args": []
+    }
+]
