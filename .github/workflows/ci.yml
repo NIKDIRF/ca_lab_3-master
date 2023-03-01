@@ -19,4 +19,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install pylint
         pip install pytest-golden
- 
+    - name: Run tests
+      run:
+        pytest
