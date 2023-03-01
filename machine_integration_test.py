@@ -1,6 +1,5 @@
 # pylint: disable=missing-function-docstring
 # pylint: disable=missing-class-docstring
-# pylint: disable=no-self-use
 # pylint: disable=line-too-long
 
 """Интеграционные тесты транслятора и машины

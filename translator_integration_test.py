@@ -1,12 +1,10 @@
 # pylint: disable=missing-function-docstring
 # pylint: disable=missing-class-docstring
-# pylint: disable=no-self-use
 
 """Интеграционные тесты транслятора и машины
 """
 
 import pytest
-
 import isa
 import translator
 

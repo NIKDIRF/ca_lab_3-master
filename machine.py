@@ -6,7 +6,6 @@
 # pylint: disable=consider-using-f-string     # избыточный синтаксис
 # pylint: disable=too-many-branches     # нет смысла сворачивать ифы в трудночитаемый код
 # pylint: disable=too-many-statements#
-# pylint: disable=no-self-use
 
 import logging
 import sys
@@ -347,7 +346,6 @@ class ControlUnit:
         'je': instr_je,
         'sv': instr_sv
     }
-
 
     def __repr__(self):
         state = "{{TICK: {}, ADDR: {}, PC: {}, OUT: {}, ACC: {}}}".format(
