@@ -19,6 +19,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install pylint
         pip install pytest-golden
+    - name: Analysing the code with pylint
+      run: |
+        pylint --max-line-length=120 isa.py translator.py machine.py translator_integration_test.py machine_integration_test.py 
     - name: Run tests
       run:
         pytest
