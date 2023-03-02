@@ -18,9 +18,9 @@ def test_prob2(golden):
         binary = os.path.join(tmpdirname, "binary.json")
         inp = os.path.join(tmpdirname, "inp.txt")
 
-        with open(source, "w", encoding="utf-8") as src,  open(inp, "w", encoding="utf-8") as inp:
+        with open(source, "w", encoding="utf-8") as src,  open(inp, "w", encoding="utf-8") as input_file:
             src.write(golden["source"])
-            inp.write(golden.get("input", ""))
+            input_file.write(golden.get("input", ""))
 
         translator.main([source, binary])
         result, data_section = isa.read_code(binary)

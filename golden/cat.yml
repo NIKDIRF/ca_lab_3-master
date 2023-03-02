@@ -9,8 +9,6 @@ source: |
   end: hlt
 input: |
   Good news, everyone!
-output: |
-  Good news, everyone!
 data:
 - '0'
 code:
@@ -29,3 +27,5 @@ code:
 - opcode: hlt
   addr: 3
   args: []
+output: |
+  Good news, everyone!
