@@ -1,0 +1,120 @@
+source: |
+  .data:
+      num prev1 0
+      num prev2 1
+      num temp 0
+      num ost 0
+      num max 4000000
+      num sum 0
+
+  .text:
+
+  next: mov 0 temp
+        add prev1 temp
+        add prev2 temp
+        mov prev2 prev1
+        mov temp prev2
+        cmp prev2 3524578
+        je end
+        rdiv prev2 2
+        sv ost
+        cmp ost 0
+        je addtosum
+        jmp next
+
+  addtosum: add prev2 sum
+            jmp next
+
+  end: add prev2 sum
+       out sum
+       hlt
+output: '4613732'
+data:
+- '0'
+- '1'
+- '0'
+- '0'
+- '4000000'
+- '0'
+- '0'
+- '3524578'
+- '2'
+- '0'
+code:
+- opcode: mov
+  addr: 0
+  args:
+  - 6
+  - 2
+- opcode: add
+  addr: 1
+  args:
+  - 0
+  - 2
+- opcode: add
+  addr: 2
+  args:
+  - 1
+  - 2
+- opcode: mov
+  addr: 3
+  args:
+  - 1
+  - 0
+- opcode: mov
+  addr: 4
+  args:
+  - 2
+  - 1
+- opcode: cmp
+  addr: 5
+  args:
+  - 1
+  - 7
+- opcode: je
+  addr: 6
+  args:
+  - 14
+- opcode: rdiv
+  addr: 7
+  args:
+  - 1
+  - 8
+- opcode: sv
+  addr: 8
+  args:
+  - 3
+- opcode: cmp
+  addr: 9
+  args:
+  - 3
+  - 9
+- opcode: je
+  addr: 10
+  args:
+  - 12
+- opcode: jmp
+  addr: 11
+  args:
+  - 0
+- opcode: add
+  addr: 12
+  args:
+  - 1
+  - 5
+- opcode: jmp
+  addr: 13
+  args:
+  - 0
+- opcode: add
+  addr: 14
+  args:
+  - 1
+  - 5
+- opcode: out
+  addr: 15
+  args:
+  - 5
+- opcode: hlt
+  addr: 16
+  args: []

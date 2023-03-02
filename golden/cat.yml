@@ -7,6 +7,9 @@ source: |
       out_char tmp
   	jmp loop
   end: hlt
+input: |
+  Good news, everyone!
+
 data:
 - '0'
 code:
@@ -25,3 +28,5 @@ code:
 - opcode: hlt
   addr: 3
   args: []
+output: |
+  Good news, everyone!

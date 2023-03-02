@@ -52,3 +52,4 @@ code:
 - opcode: hlt
   addr: 5
   args: []
+output: "Hello world!\0"
