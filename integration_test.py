@@ -12,7 +12,7 @@ import translator
 
 
 @pytest.mark.golden_test("golden/*.yml")
-def test_prob2(golden):
+def test(golden):
     with tempfile.TemporaryDirectory() as tmpdirname:
         source = os.path.join(tmpdirname, "source.asm")
         binary = os.path.join(tmpdirname, "binary.json")
