@@ -141,9 +141,6 @@ class ControlUnit:
         self.data_path.latch_acc(AccMuxSignals.MEM)
         self.tick()
         logging.debug('%s', self)
-        self.tick()
-        self.tick()
-        self.tick()
         # Запись в память по адресу второго аргумента
         self.data_path.latch_data_addr(self.args[1])
         self.data_path.write(self.data_path.acc)
