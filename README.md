@@ -270,7 +270,7 @@ Data memory
 3. [prob5](examples/prob5.asm) -- программа, решающая пятую задачу Эйлера.
 
 
-Интеграционные тесты реализованы тут: [machine_integration_test](./machine_integration_test.py) и [translator_integration_test](./translator_integration_test.py)
+Интеграционные тесты реализованы тут: [machine_integration_test](./machine_integration_test.py) и [translator_integration_test](./integration_test.py)
 
 CI:
 
