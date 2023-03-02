@@ -1,0 +1,28 @@
+[
+    {
+        "opcode": "in",
+        "addr": 0,
+        "args": [
+            0
+        ]
+    },
+    {
+        "opcode": "out_char",
+        "addr": 1,
+        "args": [
+            0
+        ]
+    },
+    {
+        "opcode": "jmp",
+        "addr": 2,
+        "args": [
+            0
+        ]
+    },
+    {
+        "opcode": "hlt",
+        "addr": 3,
+        "args": []
+    }
+]
